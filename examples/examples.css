@@ -1,0 +1,164 @@
+.navbar {
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+    max-width: 500px;
+    margin: auto;
+    padding: 0 5px;
+}
+.url-bar {
+    display: block;
+    list-style-type: none;
+    overflow: hidden;
+    border-bottom: 1px solid #B9B9B9;
+    background-color: #E2E2E2;
+    padding: 5px;
+}
+.url-bar div {
+    max-width: 500px;
+    margin: auto;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 3px;
+    padding: 0px 5px;
+}
+.url-bar span {
+    font-style: normal;
+    font-weight: normal;
+    color: gray;
+}
+.navbar .logo a {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.navbar .logo {
+    margin: 2px 20px 0 0;
+}
+.navbar li {
+    float: left;
+    margin: 5px 20px 5px 0px;
+}
+.navbar a {
+    text-decoration: none;
+}
+.logo {
+    content: 'ui-router'
+}
+body > ui-view {
+    display: block;
+    max-width: 500px;
+    margin: auto;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.left ul {
+    margin: 0;
+    padding: 0;
+}
+.left {
+    display: block;
+    width: 20%;
+    border-right: 1px solid gray;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    float: left;
+}
+
+.left li {
+    margin: 10px 10px;
+    display:block;
+}
+.center {
+    padding: 20px 0;
+    float: right;
+    width: 75%;
+}
+.center ui-view {
+    position: absolute;
+}
+/*Animations*/
+.view-change-animation.ng-enter {
+    -webkit-animation: bounceInLeft 1s;
+    animation: bounceInLeft 1s;
+}
+.view-change-animation.ng-leave {
+    -webkit-animation: bounceOutRight 2s;
+    animation: bounceOutRight 2s;
+}
+
+/*named views*/
+.root-view {
+    background-color: #009926;
+    padding: 20px 5px 5px;
+    overflow: hidden;
+}
+.welcome-content {
+    background-color: #B8B8FF;
+    padding: 10px 5px 5px;
+}
+.layout-view {
+    background-color: #B8B8FF;
+    overflow: hidden;
+    padding: 10px 5px 5px;
+}
+.layout-view h3 {
+    margin: 0;
+}
+.menu-view {
+    background-color: #FF7BFF;
+    overflow: hidden;
+    padding: 10px 5px 5px;
+}
+.center-view {
+    background-color: #EDED4D;
+    overflow: hidden;
+    padding: 10px 5px 5px;
+}
+.navbar-view {
+    background-color: #FFD7D7;
+    overflow: hidden;
+    padding: 10px 5px 5px;
+    margin-bottom: 5px;
+}
+.products-view {
+    background-color: #C8F5CE;
+    overflow: hidden;
+    padding: 10px 5px 5px;
+    margin-bottom: 5px;
+}
+.navbar-view .navbar {
+    border: 0;
+}
+
+.modal-view {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.modal-view div[ui-view]{
+   background-color: white;
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    margin: 40px auto 0;
+    padding: 20px;
+}
+
+.modal-view .modal-mask{
+    background-color: black;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
